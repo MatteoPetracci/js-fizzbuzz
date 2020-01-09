@@ -14,7 +14,7 @@
 var num = 0;
 
 for (var i = 1; i < 101; i++) {
-  var somma = num + i;
+  var somma = i;
   // console.log(num + i);
   if (somma % 3 == 0 && somma % 5 == 0) {
     console.log('FizzBuzz');
