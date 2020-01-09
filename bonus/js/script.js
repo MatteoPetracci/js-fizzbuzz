@@ -1,7 +1,7 @@
 var i = 1;
 var num = 0;
 
-while (i < 100) {
+while (i < 101) {
   var somma = num + i;
 
   if (somma % 3 == 0) {
