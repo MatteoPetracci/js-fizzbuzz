@@ -11,25 +11,22 @@
 
 
 
-var num = 0;
 
 for (var i = 1; i < 101; i++) {
-  var somma = i;
-  // console.log(num + i);
-  if (somma % 3 == 0 && somma % 5 == 0) {
+  if (i % 3 == 0 && i % 5 == 0) {
     console.log('FizzBuzz');
-    somma = 'FizzBuzz';
+    document.getElementById('lista').innerHTML += "<li>" + "FizzBuzz" + "</li>";
   }
-  if (somma % 3 == 0) {
+  if (i % 3 == 0) {
     console.log('Fizz');
-    somma = 'Fizz';
-  } else if (somma % 5 == 0) {
+    document.getElementById('lista').innerHTML += "<li>" + "Fizz" + "</li>";
+  } else if (i % 5 == 0) {
     console.log('Buzz');
-    somma = 'Buzz';
+    document.getElementById('lista').innerHTML += "<li>" + "Buzz" + "</li>";
   } else {
-    console.log(somma);
+    console.log(i);
+    document.getElementById('lista').innerHTML += "<li>" + i + "</li>";
   }
-  document.getElementById('lista').innerHTML += "<li>" + somma + "</li>";
 }
 
 
