@@ -28,17 +28,3 @@ for (var i = 1; i < 101; i++) {
     document.getElementById('lista').innerHTML += "<li>" + i + "</li>";
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-// document.getElementById('lista').innerHTML += "<li>" + "Buzz" + "</li>";
-
-// document.getElementById('lista').innerHTML += "<li>" + "FizzBuzz" + "</li>";
