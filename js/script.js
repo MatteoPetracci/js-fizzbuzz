@@ -14,17 +14,34 @@
 var num = 0;
 
 for (var i = 1; i < 101; i++) {
-  // console.log(num + i);
   var somma = num + i;
-
+  // console.log(num + i);
+  if (somma % 3 == 0 && somma % 5 == 0) {
+    console.log('FizzBuzz');
+    somma = 'FizzBuzz';
+  }
   if (somma % 3 == 0) {
     console.log('Fizz');
+    somma = 'Fizz';
   } else if (somma % 5 == 0) {
     console.log('Buzz');
+    somma = 'Buzz';
   } else {
     console.log(somma);
   }
-  if (somma % 3 == 0 && somma % 5 == 0) {
-    console.log('FizzBuzz');
-  }
+  document.getElementById('lista').innerHTML += "<li>" + somma + "</li>";
 }
+
+
+
+
+
+
+
+
+
+
+
+// document.getElementById('lista').innerHTML += "<li>" + "Buzz" + "</li>";
+
+// document.getElementById('lista').innerHTML += "<li>" + "FizzBuzz" + "</li>";
